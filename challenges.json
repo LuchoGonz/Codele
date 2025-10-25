@@ -1,0 +1,12 @@
+{
+  "python": [
+    { "code": "print(3*(2+1))", "answer":"9", "hint":"Orden de operaciones" },
+    { "code": "len('codele')", "answer":"6", "hint":"Cuenta caracteres" },
+    { "code": "x=[1,2,3]; print(sum(x))", "answer":"6", "hint":"Suma los elementos" }
+  ],
+  "javascript": [
+    { "code": "console.log(2+'2')", "answer":"22", "hint":"Concatenación o suma?" },
+    { "code": "[1,2,3].length", "answer":"3", "hint":"Cantidad de elementos" },
+    { "code": "typeof null", "answer":"object", "hint":"Tipo curioso en JS" }
+  ]
+}

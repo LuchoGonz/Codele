@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Codele</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Pantalla de inicio -->
+  <div id="language-select">
+    <h1>🧠 Codele</h1>
+    <p>¡Desafía tu mente y progresa cada día!</p>
+    <div>
+      <button onclick="chooseLanguage('python')">Python 🐍</button>
+      <button onclick="chooseLanguage('javascript')">JavaScript ⚡</button>
+    </div>
+  </div>
+
+  <!-- Pantalla de juego -->
+  <div id="app" style="display:none;">
+    <h1>🧠 Codele</h1>
+    <p class="subtitle"></p>
+
+    <div id="challenge-box">
+      <pre id="challenge-code">Cargando desafío...</pre>
+    </div>
+
+    <div id="input-section">
+      <input type="text" id="answer" placeholder="Tu respuesta..." autocomplete="off" />
+      <button id="submit-btn">Enviar</button>
+    </div>
+
+    <div id="feedback"></div>
+    <div id="info">
+      <p>Intentos: <span id="attempts">0</span> / 6</p>
+      <p>Racha: <span id="streak">0</span></p>
+    </div>
+
+    <div id="actions">
+      <button id="hint-btn">💡 Pista</button>
+      <button id="share-btn">📤 Compartir</button>
+    </div>
+  </div>
+
+  <!-- Modal para siguiente lenguaje -->
+  <div id="modal-next">
+    <div>
+      <h2 id="modal-title">¡Desafío terminado!</h2>
+      <p id="modal-feedback"></p>
+      <label>Calificá este desafío:</label>
+      <select id="rating">
+        <option value="5">⭐⭐⭐⭐⭐</option>
+        <option value="4">⭐⭐⭐⭐</option>
+        <option value="3">⭐⭐⭐</option>
+        <option value="2">⭐⭐</option>
+        <option value="1">⭐</option>
+      </select>
+      <div style="margin-top:15px;">
+        <button id="next-lang-btn">Siguiente lenguaje</button>
+        <button id="stay-btn">Quedarme</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
